@@ -1,0 +1,11 @@
+.header-container {
+  height: 70px;
+}
+
+.tabs-container > li {
+  cursor: pointer;
+}
+
+.tabs-container > li > img {
+  width: 30px !important;
+}

@@ -1,0 +1,8 @@
+.dashboard-container {
+  min-height: calc(100vh - 70px);
+}
+
+.underline-text {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
