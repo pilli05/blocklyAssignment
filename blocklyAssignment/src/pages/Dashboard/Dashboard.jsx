@@ -3,18 +3,20 @@ import "./Dashboard.css";
 import Hi from "../../assets/wave.svg";
 import HeroImage from "../../assets/images/hero-image.png";
 import DarkSocialLinks from "../../assets/images/dark-social-links.png";
+import LightSocialLinks from "../../assets/images/light-social-links.png";
 import DarkEmail from "../../assets/images/dark-email.png";
+import LightEmail from "../../assets/images/light-email.png";
 
-const Dashboard = () => {
+const Dashboard = ({ lightTheme }) => {
   return (
     <div className="container-fluid dashboard-container">
       <div
         className="row d-flex align-items-center justify-content-center"
-        style={{ padding: "50px " }}
+        style={{ padding: "10px 50px 10px 50px" }}
       >
-        <div className="col-12 col-md-6 p-5  d-flex justify-content-center align-items-center ">
-          <div className="d-flex ">
-            <div>
+        <div className="col-12 col-md-6 d-flex justify-content-center align-items-center ">
+          <div className="d-flex justify-content-center ">
+            <div style={{ padding: "50px 10px 50px 10px" }}>
               <p
                 className="fw-bold ms-5  d-flex justify-content-center align-items-center"
                 style={{
@@ -45,8 +47,38 @@ const Dashboard = () => {
                 UI/UX Designer, Front-End Developer & Thinker. <br /> Based in
                 India.
               </p>
+              <div className="d-flex align-items-center ms-5 mt-2">
+                <button
+                  className="shadow p-2 m-0 me-4 d-flex justify-content-center align-items-center border border-4 border-white rounded fw-bold"
+                  style={{
+                    background: "linear-gradient(to right, #DF580C, #FD993D)",
+                    color: "#FEFEFE",
+                  }}
+                >
+                  Download CV
+                </button>
+                <button
+                  className="shadow p-2 m-0 d-flex justify-content-center align-items-center border border-4 border-white rounded fw-bold"
+                  style={{
+                    background: "linear-gradient(to right, #434343, #000000)",
+                    color: "#FEFEFE",
+                  }}
+                >
+                  Get in Touch!
+                </button>
+              </div>
+              <div
+                className="me-3"
+                style={{ position: "absolute", top: "64%", left: "3%" }}
+              >
+                <img
+                  src={lightTheme ? DarkSocialLinks : LightSocialLinks}
+                  alt="social-links"
+                  style={{ width: "28px", height: "210px" }}
+                />
+              </div>
 
-              <div className="d-flex  align-items-start ">
+              {/* <div className="d-flex  align-items-start ">
                 <div className="me-3 ">
                   <img src={DarkSocialLinks} alt="social-links" />
                 </div>
@@ -70,7 +102,7 @@ const Dashboard = () => {
                     Get in Touch!
                   </button>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -81,9 +113,14 @@ const Dashboard = () => {
               src={HeroImage}
               alt="hero-image"
               className=""
-              style={{ width: "100%" }}
+              style={{ width: "85%" }}
             />
-            <img src={DarkEmail} alt="email" className="align-self-end" />
+            <img
+              src={lightTheme ? DarkEmail : LightEmail}
+              alt="email"
+              style={{ width: "20px" }}
+              className="align-self-end"
+            />
           </div>
         </div>
       </div>

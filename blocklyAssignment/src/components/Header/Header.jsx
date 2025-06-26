@@ -10,7 +10,7 @@ import { IoMenu } from "react-icons/io5";
 const Header = ({ lightTheme, setLightTheme }) => {
   const navigate = useNavigate();
   return (
-    <div className="container-fluid px-5 py-3 header-container">
+    <div className="container-fluid px-3 px-md-5 py-3 header-container">
       <div className="row d-flex align-items-center">
         <div className="col-md-6  d-flex align-items-center justify-content-between">
           <div className=" d-flex align-items-center">
@@ -47,10 +47,18 @@ const Header = ({ lightTheme, setLightTheme }) => {
           </div>
           <div class="">
             <ul class="m-0 list-unstyled fw-semibold fs-6 tabs-container">
-              <li className="mx-2" onClick={() => navigate("/")}>
+              <li
+                className="mx-2"
+                onClick={() => navigate("/")}
+                data-bs-dismiss="offcanvas"
+              >
                 Home
               </li>
-              <li className="mx-2" onClick={() => navigate("/about")}>
+              <li
+                className="mx-2"
+                onClick={() => navigate("/about")}
+                data-bs-dismiss="offcanvas"
+              >
                 About
               </li>
               <li className="mx-2">Resume</li>
@@ -67,7 +75,7 @@ const Header = ({ lightTheme, setLightTheme }) => {
             </ul>
           </div>
         </div>
-        <div className="d-none d-md-flex  col-md-6 ">
+        <div className="col-md-6 d-none d-md-flex  justify-content-end   ">
           <ul className="d-flex justify-content-end  m-0 list-unstyled fw-semibold fs-6 tabs-container">
             <li className="mx-2" onClick={() => navigate("/")}>
               Home

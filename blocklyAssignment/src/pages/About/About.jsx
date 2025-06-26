@@ -6,46 +6,40 @@ import LeftVector from "../../assets/images/left-vector.png";
 import BottomLeftVector from "../../assets/images/bottom-left-vector.png";
 import BottomRightVector from "../../assets/images/bottom-right-vector.png";
 import DarkEmail from "../../assets/images/dark-email.png";
+import LightEmail from "../../assets/images/light-email.png";
 import DarkSocialLinks from "../../assets/images/dark-social-links.png";
 import LightSocialLinks from "../../assets/images/light-social-links.png";
+import LeftHandVector from "../../assets/images/left-hand-vector.png";
 
-const About = () => {
+const About = ({ lightTheme }) => {
   return (
     <div className="container-fluid dashboard-container">
-      <div
-        className="row d-flex align-items-center justify-content-center"
-        style={{ padding: "30px " }}
-      >
+      <div className="row d-flex align-items-center justify-content-center">
         <div className="col-2 d-none  d-md-flex flex-column  align-items-center">
-          <div className="position-relative">
-            <img src={LeftVector} alt="logo" className="w-100" />
-            <img
-              src={Hand}
-              alt="logo"
-              className="w-100 position-absolute"
-              style={{
-                top: "50%",
-                left: "55%",
-                transform: "translate(-50%, -50%)",
-              }}
-            />
+          <div className="">
+            <img src={LeftHandVector} alt="logo" className="w-100" />
           </div>
           <img
-            src={DarkSocialLinks}
+            src={lightTheme ? DarkSocialLinks : LightSocialLinks}
             alt="logo"
             className=""
-            style={{ width: "30px" }}
+            style={{ width: "28px", height: "210px" }}
           />
         </div>
         <div
           className="col-12 col-md-8"
-          style={{ fontWeight: "200", marginTop: "50px" }}
+          style={{
+            fontWeight: "200",
+          }}
         >
           <div className="d-flex">
             <p className="fw-bold me-5" style={{ fontSize: "36px" }}>
               This is it. ;)
             </p>
-            <p className="w-50" style={{ borderBottom: "2px solid gray" }}></p>
+            <p
+              className="w-50 d-none d-md-block"
+              style={{ borderBottom: "2px solid gray" }}
+            ></p>
           </div>
           <p className="">
             Anish Kr. Sinha is an Indian{" "}
@@ -91,23 +85,23 @@ const About = () => {
               src={BottomLeftVector}
               alt="logo"
               className=""
-              style={{ width: "200px", height: "200px" }}
+              style={{ width: "150px", height: "150px" }}
             />
             <img
               src={BottomRightVector}
               alt="logo"
               className=""
-              style={{ width: "150px", height: "250px" }}
+              style={{ width: "150px", height: "180px" }}
             />
           </div>
         </div>
         <div className="col-2 d-none d-md-flex flex-column  align-items-center">
-          <img src={RightVector} alt="logo" className="w-75" />
+          <img src={RightVector} alt="logo" style={{ width: "70%" }} />
           <img
-            src={DarkEmail}
+            src={lightTheme ? DarkEmail : LightEmail}
             alt="logo"
-            className=""
-            style={{ width: "30px" }}
+            className="mt-0"
+            style={{ width: "20px" }}
           />
         </div>
       </div>
