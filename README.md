@@ -14,9 +14,9 @@
 <p>1. Clone the Repository</p>
 <p>https://github.com/pilli05/blocklyAssignment.git</p>
 <p>2. Navigate  to Project Directory:</p>
-<p>2.a). cd blocklyAssignment</p>
-<p>2.b). npm install</p>
-<p>2.c). npm run dev</p>
+<p>3. cd blocklyAssignment</p>
+<p>4. npm install</p>
+<p>5. npm run dev</p>
 
 
 
