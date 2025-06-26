@@ -12,11 +12,11 @@
 <h3>Installation</h3>
 <p>To get started with this project, follow these steps:</p>
 <p>1. Clone the Repository</p>
-<p></p>
+<p>https://github.com/pilli05/blocklyAssignment.git</p>
 <p>2. Navigate  to Project Directory:</p>
-<p>cd blocklyAssignment</p>
-<p>npm install</p>
-<p>npm run dev</p>
+<p>2.a). cd blocklyAssignment</p>
+<p>2.b). npm install</p>
+<p>2.c). npm run dev</p>
 
 
 
