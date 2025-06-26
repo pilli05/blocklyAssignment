@@ -1,10 +1,12 @@
 <h1>Resume App in React</h1>
 <p>The aim of project was to create a resume interface UI design using React designed to work on both web and mobile devices.</p>
-<img src="https://github.com/user-attachments/assets/1dd2387e-aa79-4063-ba6f-a1f0f97a5d47" />
-<img src="https://github.com/user-attachments/assets/8d9b6cae-5576-4fd5-b95a-b5dce6376075" />
-<img src="https://github.com/user-attachments/assets/3546c0b4-9f1a-4320-8454-58b6dd769e90" />
-<img src="https://github.com/user-attachments/assets/6c128b4d-5c8a-4df1-a9d4-18d48d6e85e4" />
+
+<img src="https://github.com/user-attachments/assets/01e642fb-604d-44c7-a5b1-47c5872924b1" />
+<img src="https://github.com/user-attachments/assets/f11d42f4-e07b-4803-887b-756968533dcf" />
+<img src="https://github.com/user-attachments/assets/ffee78e5-d6ba-4cc6-bbfa-b09e84c656bb" />
+<img src="https://github.com/user-attachments/assets/8521fd2b-10ef-4dcb-924a-75d24b1f4df9" />
 <img src="https://github.com/user-attachments/assets/090312a0-631a-4261-8c32-896044fc0700" />
+<img src="https://github.com/user-attachments/assets/e66990ab-ee8e-42e7-8101-8bfb78500420" />
 <img src="https://github.com/user-attachments/assets/8fb35fe4-0bcd-4b45-a08f-0b4fa030e48b" />
 <img src="https://github.com/user-attachments/assets/d8ca8131-3747-42be-a456-8dee74fafde9" />
 <img src="https://github.com/user-attachments/assets/3656d679-c0d7-417a-b524-3f96f587306e" />
