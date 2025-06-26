@@ -4,11 +4,13 @@ import DarkLogo from "../../assets/dark-logo.svg";
 import LightLogo from "../../assets/images/light-logo.png";
 import DarkMoon from "../../assets/images/dark-moon.png";
 import Light from "../../assets/images/light-theme.png";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { IoMenu } from "react-icons/io5";
 
 const Header = ({ lightTheme, setLightTheme }) => {
   const navigate = useNavigate();
+  const location = useLocation();
+
   return (
     <div className="container-fluid px-3 px-md-5 py-3 header-container">
       <div className="row d-flex align-items-center">
@@ -48,14 +50,20 @@ const Header = ({ lightTheme, setLightTheme }) => {
           <div class="">
             <ul class="m-0 list-unstyled fw-semibold fs-6 tabs-container">
               <li
-                className="mx-2 mt-5"
+                className={
+                  location.pathname === "/" ? "active mx-2 mt-5" : "mx-2 mt-5"
+                }
                 onClick={() => navigate("/")}
                 data-bs-dismiss="offcanvas"
               >
                 Home
               </li>
               <li
-                className="mx-2 my-2"
+                className={
+                  location.pathname === "/about"
+                    ? "active mx-2 my-2"
+                    : "mx-2 my-2"
+                }
                 onClick={() => navigate("/about")}
                 data-bs-dismiss="offcanvas"
               >
@@ -81,10 +89,18 @@ const Header = ({ lightTheme, setLightTheme }) => {
         </div>
         <div className="col-md-6 d-none d-md-flex  justify-content-end   ">
           <ul className="d-flex justify-content-end  m-0 list-unstyled fw-semibold fs-6 tabs-container">
-            <li className="mx-2" onClick={() => navigate("/")}>
+            <li
+              className={location.pathname === "/" ? "active mx-2" : "mx-2"}
+              onClick={() => navigate("/")}
+            >
               Home
             </li>
-            <li className="mx-2" onClick={() => navigate("/about")}>
+            <li
+              className={
+                location.pathname === "/about" ? "active mx-2" : "mx-2"
+              }
+              onClick={() => navigate("/about")}
+            >
               About
             </li>
             <li className="mx-2">Resume</li>

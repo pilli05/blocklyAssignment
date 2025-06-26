@@ -13,3 +13,10 @@
 .offcanvas {
   max-width: 70% !important;
 }
+
+.active {
+  display: inline-block !important;
+  color: blueviolet !important;
+  border-bottom: 3px solid blueviolet !important;
+  font-weight: bold !important;
+}
