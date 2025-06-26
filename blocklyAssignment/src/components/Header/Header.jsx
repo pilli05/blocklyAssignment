@@ -37,7 +37,7 @@ const Header = ({ lightTheme, setLightTheme }) => {
           id="offcanvasExample"
           aria-labelledby="offcanvasExampleLabel"
         >
-          <div class="offcanvas-header">
+          <div class="offcanvas-header border-bottom border-dark">
             <button
               type="button"
               class="btn-close"
@@ -48,28 +48,32 @@ const Header = ({ lightTheme, setLightTheme }) => {
           <div class="">
             <ul class="m-0 list-unstyled fw-semibold fs-6 tabs-container">
               <li
-                className="mx-2"
+                className="mx-2 mt-5"
                 onClick={() => navigate("/")}
                 data-bs-dismiss="offcanvas"
               >
                 Home
               </li>
               <li
-                className="mx-2"
+                className="mx-2 my-2"
                 onClick={() => navigate("/about")}
                 data-bs-dismiss="offcanvas"
               >
                 About
               </li>
-              <li className="mx-2">Resume</li>
-              <li className="mx-2">Skills</li>
-              <li className="mx-2">Projects</li>
-              <li className="mx-2">Contact</li>
-              <li className="mx-2" onClick={() => setLightTheme(!lightTheme)}>
+              <li className="mx-2 my-2">Resume</li>
+              <li className="mx-2 my-2">Skills</li>
+              <li className="mx-2 my-2">Projects</li>
+              <li className="mx-2 my-2">Contact</li>
+              <li
+                className="mx-2 my-2"
+                onClick={() => setLightTheme(!lightTheme)}
+              >
                 <img
                   src={lightTheme ? DarkMoon : Light}
                   alt="logo"
                   className="w-75 cursor-pointer"
+                  data-bs-dismiss="offcanvas"
                 />
               </li>
             </ul>

@@ -9,3 +9,7 @@
 .tabs-container > li > img {
   width: 30px !important;
 }
+
+.offcanvas {
+  max-width: 70% !important;
+}
