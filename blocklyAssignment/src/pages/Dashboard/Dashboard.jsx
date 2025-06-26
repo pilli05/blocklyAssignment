@@ -1,4 +1,3 @@
-import React from "react";
 import "./Dashboard.css";
 import Hi from "../../assets/wave.svg";
 import HeroImage from "../../assets/images/hero-image.png";
@@ -77,32 +76,6 @@ const Dashboard = ({ lightTheme }) => {
                   style={{ width: "28px", height: "210px" }}
                 />
               </div>
-
-              {/* <div className="d-flex  align-items-start ">
-                <div className="me-3 ">
-                  <img src={DarkSocialLinks} alt="social-links" />
-                </div>
-                <div className="d-flex align-items-center">
-                  <button
-                    className="shadow p-2 m-0 me-4 d-flex justify-content-center align-items-center border border-4 border-white rounded fw-bold"
-                    style={{
-                      background: "linear-gradient(to right, #DF580C, #FD993D)",
-                      color: "#FEFEFE",
-                    }}
-                  >
-                    Download CV
-                  </button>
-                  <button
-                    className="shadow p-2 m-0 d-flex justify-content-center align-items-center border border-4 border-white rounded fw-bold"
-                    style={{
-                      background: "linear-gradient(to right, #434343, #000000)",
-                      color: "#FEFEFE",
-                    }}
-                  >
-                    Get in Touch!
-                  </button>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>

@@ -1,8 +1,5 @@
-import React from "react";
 import "./About.css";
-import Hand from "../../assets/images/hand.png";
 import RightVector from "../../assets/images/right-vector.png";
-import LeftVector from "../../assets/images/left-vector.png";
 import BottomLeftVector from "../../assets/images/bottom-left-vector.png";
 import BottomRightVector from "../../assets/images/bottom-right-vector.png";
 import DarkEmail from "../../assets/images/dark-email.png";

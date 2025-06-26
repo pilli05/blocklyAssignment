@@ -1,4 +1,3 @@
-import React from "react";
 import "./Header.css";
 import DarkLogo from "../../assets/dark-logo.svg";
 import LightLogo from "../../assets/images/light-logo.png";
